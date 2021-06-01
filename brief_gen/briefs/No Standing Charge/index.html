@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <title>Content creation brief</title>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a href="#" class="navbar-brand">
+      <!-- Logo Image -->
+      <img src="logo.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+      <!-- Logo Text -->
+      <!--<span class="text-uppercase font-weight-bold">Company</span>-->
+    </a>
+
+    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a href="https://ustyle.guide/" class="nav-link">Style Guide <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <section style="padding-top:20px;">
+
+<div class="container">
+    <h1 style="align:center;">Content Brief for <span id="primary-topic">Energy Comparison</span></h1>
+    <div class="row">
+
+    <div class="col-sm">
+
+        <div class="row">
+
+            <div class="col-sm-9">
+                <h3>Notes</h3>
+
+        <p id="seo-comment">Comments from SEO on the competitors which are doing really well etc etc</p>
+            </div>
+
+            <div class="col-sm-3">
+                <h3>Useful links</h3>
+                <ul><li><a target=”_blank” href ="https://answerthepublic.com/">Answer the public</a></li>
+                    <li><a target=”_blank” href="https://app.neilpatel.com/en/ubersuggest/">Ubersuggest</a><span id="uber"></span></li>
+                    <li><a target=”_blank” href="https://alsoasked.com/">People also ask</a> <span id="ppa"></span></li>
+        </ul>
+            </div>
+        </div>
+        <h2>Keywords</h2>
+        <div id="data-table">
+        <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Keyword</th>
+                <th>Volume</th>
+                <th>Answer box</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+            </tr>
+        </tbody>
+        </table>
+        </div>
+    </div></div>
+    <h2 >Competitor content & stats <b><span id="primary-keyword"></span></b></h2>
+    <div class="row" style="padding-top:20px" >
+
+        <div class="row">
+
+<div class="col-xl-3 col-lg-6">
+<div class="card card-stats mb-4 mb-xl-0">
+<div class="card-body">
+<div class="row">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">Words in body</h5>
+    <span class="h2 font-weight-bold mb-0" id ="words">350,897</span>
+    </div>
+    <div class="col-auto">
+    <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+    <i class="fas fa-chart-bar"></i>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+<div class="col-xl-3 col-lg-6">
+<div class="card card-stats mb-4 mb-xl-0">
+<div class="card-body">
+<div class="row">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">Images in body</h5>
+    <span class="h2 font-weight-bold mb-0"><span id="images"></span></span>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+<div class="col-xl-3 col-lg-6">
+<div class="card card-stats mb-4 mb-xl-0">
+<div class="card-body">
+<div class="row">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">Number of H2's</h5>
+<span class="h2 font-weight-bold mb-0" id="h2-num">924</span>
+</div>
+<div class="col-auto">
+<div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+<i class="fas fa-users"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-lg-6">
+<div class="card card-stats mb-4 mb-xl-0">
+<div class="card-body">
+<div class="row">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">Number of H3s</h5>
+<span class="h2 font-weight-bold mb-0" id="h3-num">49,65%</span>
+</div>
+<div class="col-auto">
+<div class="icon icon-shape bg-info text-white rounded-circle shadow">
+<i class="fas fa-percent"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    <!--<h2 style="padding-top:20px">Competitor exploration and content</h2>-->
+    <br>
+    <button class="btn-info" onclick="changeValue()" id="button1">Click to view next competitor example</button>
+    <p>This <a target=”_blank” id="link" href="link">url</a> ranks in postion <span id="rank">1</span> for the main keyword for this page</p>
+
+    <div style="height:400px;width:1280px;overflow:auto;" class="shadow p-3 mb-5 bg-white rounded">
+        <img id='image' src="screenshots/1.png" alt="Sample picture for scroll box" style="padding-bottom:20px">
+    </div>
+<div style="padding-top:20px">
+        <div class="card" style="">
+  <div class="card-body">
+    <h5 class="card-title">Meta Data</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Title</h6>
+    <p class="card-text"><i><span id="page-title">Title</span></i></p>
+      <h6 class="card-subtitle mb-2 text-muted">Description</h6>
+    <p class="card-text"><i><span id="page-description">Description</span></i></p>
+      <h6 class="card-subtitle mb-2 text-muted">H1</h6>
+    <p class="card-text"><i><span id="page-h1">Description</span></i></p>
+      <h6 class="card-subtitle mb-2 text-muted">H2</h6>
+    <p class="card-text"><i><span id="page-h2">Description</span></i>
+      <h6 class="card-subtitle mb-2 text-muted">H3</h6>
+    <p class="card-text"><i><span id="page-h3">Description</span></i></p>
+  </div>
+</div>
+</div>
+    <div style="display: none;" >
+        <div class="card" style="">
+  <div class="card-body">
+    <h5 class="card-title">Info</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Title</h6>
+    <p class="card-text"><ul><li>Primary keyword: <span id="h1">qw</span></li>
+        <li>Page primary keyword: <span id="primary-keyword"></span></li>
+        <li>Date generated: <span id="date-gen"></span></li>
+        </ul> </p>
+
+  </div>
+</div>
+</div>
+    <div style="padding-top:20px;padding-bottom:20px">
+        <div class="card" style="">
+  <div class="card-body">
+    <h5 class="card-title">Page content</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the content </h6>
+    <p class="card-text overflow-auto" id ="content"> sanjdksnjasnjkd
+    dbnasdhjksna
+    bnjkasdnkajs
+    bndahjksndkjas
+    hbajsndjaskn
+    njkdnjksaan</p>
+  </div>
+</div>
+</div>
+					</div>
+    <div id="hidden" style="display: none;">
+        <span id="content-1"></span>
+        <span id="content-2"></span>
+        <span id="content-3"></span>
+        <span id="content-4"></span>
+        <span id="content-5"></span>
+        <span id="content-6"></span>
+        <span id="content-7"></span>
+        <span id="content-8"></span>
+        <span id="content-9"></span>
+        <span id="content-10"></span>
+        <span id="link-1"></span>
+        <span id="link-2"></span>
+        <span id="link-3"></span>
+        <span id="link-4"></span>
+        <span id="link-5"></span>
+        <span id="link-6"></span>
+        <span id="link-7"></span>
+        <span id="link-8"></span>
+        <span id="link-9"></span>
+        <span id="link-10"></span>
+        <span id="words-1">12121</span>
+        <span id="words-2"></span>
+        <span id="words-3"></span>
+        <span id="words-4"></span>
+        <span id="words-5"></span>
+        <span id="words-6"></span>
+        <span id="words-7"></span>
+        <span id="words-8"></span>
+        <span id="words-9"></span>
+        <span id="words-10"></span>
+        <span id="images-1">12</span>
+        <span id="images-2"></span>
+        <span id="images-3"></span>
+        <span id="images-4"></span>
+        <span id="images-5"></span>
+        <span id="images-6"></span>
+        <span id="images-7"></span>
+        <span id="images-8"></span>
+        <span id="images-9"></span>
+        <span id="images-10"></span>
+        <span id="h1-1"></span>
+        <span id="h1-2"></span>
+        <span id="h1-3"></span>
+        <span id="h1-4"></span>
+        <span id="h1-5"></span>
+        <span id="h1-6"></span>
+        <span id="h1-7"></span>
+        <span id="h1-8"></span>
+        <span id="h1-9"></span>
+        <span id="h1-10"></span>
+        <span id="h2-1"></span>
+        <span id="h2-2"></span>
+        <span id="h2-3"></span>
+        <span id="h2-4"></span>
+        <span id="h2-5"></span>
+        <span id="h2-6"></span>
+        <span id="h2-7"></span>
+        <span id="h2-8"></span>
+        <span id="h2-9"></span>
+        <span id="h2-10"></span>
+        <span id="h3-1"></span>
+        <span id="h3-2"></span>
+        <span id="h3-3"></span>
+        <span id="h3-4"></span>
+        <span id="h3-5"></span>
+        <span id="h3-6"></span>
+        <span id="h3-7"></span>
+        <span id="h3-8"></span>
+        <span id="h3-9"></span>
+        <span id="h3-10"></span>
+        <span id="title-1"></span>
+        <span id="title-2"></span>
+        <span id="title-3"></span>
+        <span id="title-4"></span>
+        <span id="title-5"></span>
+        <span id="title-6"></span>
+        <span id="title-7"></span>
+        <span id="title-8"></span>
+        <span id="title-9"></span>
+        <span id="title-10"></span>
+        <span id="description-1"></span>
+        <span id="description-2"></span>
+        <span id="description-3"></span>
+        <span id="description-4"></span>
+        <span id="description-5"></span>
+        <span id="description-6"></span>
+        <span id="description-7"></span>
+        <span id="description-8"></span>
+        <span id="description-9"></span>
+        <span id="description-10"></span>
+        <span id="len-h2-1"></span>
+        <span id="len-h2-2"></span>
+        <span id="len-h2-3"></span>
+        <span id="len-h2-4"></span>
+        <span id="len-h2-5"></span>
+        <span id="len-h2-6"></span>
+        <span id="len-h2-7"></span>
+        <span id="len-h2-8"></span>
+        <span id="len-h2-9"></span>
+        <span id="len-h2-10"></span>
+        <span id="len-h3-1"></span>
+        <span id="len-h3-2"></span>
+        <span id="len-h3-3"></span>
+        <span id="len-h3-4"></span>
+        <span id="len-h3-5"></span>
+        <span id="len-h3-6"></span>
+        <span id="len-h3-7"></span>
+        <span id="len-h3-8"></span>
+        <span id="len-h3-9"></span>
+        <span id="len-h3-10"></span>
+    </div>
+  </div>
+
+</div>
+
+    </section>
+  <script src="path/to/chartjs/dist/Chart.js"></script>
+    <script>
+        var myChart = new Chart(ctx, {...});
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="data/data.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() {
+    $('#example').DataTable();
+} );</script>
+  </body>
+</html>
